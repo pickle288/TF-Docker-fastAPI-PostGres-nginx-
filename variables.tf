@@ -4,14 +4,14 @@
 #postgres_user
 
 variable "postgres_user" {
-  type = string
+  type      = string
   sensitive = true
 }
 variable "postgres_password" {
-  type = string
+  type      = string
   sensitive = true
 }
 variable "postgres_db" {
-  type = string
+  type      = string
   sensitive = true
 }

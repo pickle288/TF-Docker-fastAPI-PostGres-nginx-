@@ -4,6 +4,6 @@
 
 
 postgres_password = "Passw0rd"
-postgres_user = "admin"
-postgres_db = "database"
+postgres_user     = "admin"
+postgres_db       = "database"
 

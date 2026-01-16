@@ -5,8 +5,8 @@
 # - Les volumes pour les logs
 # - La persistance des données
 resource "docker_volume" "vol_postgres" {
-    name = "postgres_volume" 
- 
+  name = "postgres_volume"
+
 }
 
 
