@@ -23,7 +23,7 @@ resource "docker_container" "cont_nginx" {
     host_path      = "C:/Users/m.potier/OneDrive - pellencst.com/Bureau/vscode/tf-docker/nginx.conf"
     container_path = "/etc/nginx/nginx.conf"
   }
-  depends_on = [docker_image.nginx]
+  depends_on = [docker_container.cont_fastapi]
 }
 
 #container postgres
