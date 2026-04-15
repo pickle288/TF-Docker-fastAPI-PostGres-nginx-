@@ -22,7 +22,7 @@ resource "docker_container" "cont_nginx" {
 
   #permet de monter le fichier de conf nginx depuis l'hôte vers le conteneur dans /etc/nginx/nginx.confs
   volumes {
-    host_path = "C:/Users/max/Documents/Github/TF-Docker-fastAPI-PostGres-nginx-/nginx.conf"
+    host_path = abspath("${path.module}/nginx.conf")
     container_path = "/etc/nginx/nginx.conf"
   }
   depends_on = [docker_image.nginx, docker_container.cont_fastapi, docker_container.cont_postgres]
@@ -63,7 +63,7 @@ resource "docker_container" "cont_fastapi" {
      }
 
      volumes {
-       host_path = "C:/Users/max/Documents/Github/TF-Docker-fastAPI-PostGres-nginx-/backend"
+       host_path = abspath("${path.module}/backend")
        container_path = "/app/"
      }
 
