@@ -1,1 +1,1 @@
-Infrastructure Docker entièrement provisionnée avec Terraform permettant de déployer un environnement de développement complet (Nginx, API FastAPI, PostgreSQL) de manière reproductible et automatisée.
+Infrastructure Docker provisionnée avec Terraform permettant de déployer une infra (Nginx, API FastAPI, PostgreSQL), afin d'intérragir via requete HTTP via l'api à la base Postgres.
