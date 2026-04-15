@@ -19,11 +19,13 @@ resource "docker_container" "cont_nginx" {
   networks_advanced {
     name = docker_network.network.name
   }
+
+  #permet de monter le fichier de conf nginx depuis l'hôte vers le conteneur dans /etc/nginx/nginx.confs
   volumes {
-    host_path = "C:/Users/m.potier/OneDrive - pellencst.com/Bureau/vscode/tf-docker/nginx.conf"
+    host_path = "C:/Users/max/Documents/Github/TF-Docker-fastAPI-PostGres-nginx-/nginx.conf"
     container_path = "/etc/nginx/nginx.conf"
   }
-  depends_on = [docker_image.nginx]
+  depends_on = [docker_image.nginx, docker_container.cont_fastapi, docker_container.cont_postgres]
 }
 
 #container postgres
@@ -61,7 +63,7 @@ resource "docker_container" "cont_fastapi" {
      }
 
      volumes {
-       host_path = "C:/Users/m.potier/OneDrive - pellencst.com/Bureau/vscode/tf-docker/backend"
+       host_path = "C:/Users/max/Documents/Github/TF-Docker-fastAPI-PostGres-nginx-/backend"
        container_path = "/app/"
      }
 
