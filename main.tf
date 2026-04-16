@@ -9,7 +9,7 @@ terraform {
   }
 }
 
-provider "docker" {} 
+provider "docker" {}
 
 #image ngnix
 resource "docker_image" "nginx" {
