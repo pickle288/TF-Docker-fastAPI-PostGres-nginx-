@@ -1,4 +1,4 @@
-# 🏗️ Infrastructure Docker + Terraform
+# Infrastructure Docker + Terraform
 
 Infrastructure Docker provisionnée via Terraform permettant de déployer une stack complète composée de Nginx, d’une API FastAPI et d’une base de données PostgreSQL.
 
@@ -6,14 +6,14 @@ Cette infrastructure expose une API permettant d’interagir avec la base de don
 
 ---
 
-## 🧰 Prérequis
+## Prérequis
 
 - Terraform installé  
 - Docker installé  
 
 ---
 
-## 🚀 Déploiement de l’infrastructure
+## Déploiement de l’infrastructure
 
 ### 1. Cloner le repository
 git clone <repo>
