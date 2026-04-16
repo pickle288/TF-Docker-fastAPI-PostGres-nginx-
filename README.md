@@ -16,8 +16,8 @@ Cette infrastructure expose une API permettant d’interagir avec la base de don
 ## Déploiement de l’infrastructure
 
 ### 1. Cloner le repository
-git clone <repo>
-cd <repo>
+git clone "URL repo"
+cd "Chemin\repo"
 
 ### 2. Initilalisation & Déploiement 
 terraform init
